@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link
+      href="
+    https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css
+    "
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Amitesh Portfolio | A UI/UX Dev -> Full Stack Dev</title>
+  </head>
+  <body>
+    <main id="main">
+      <!-- HERO-SECTION -->
+      <div class="md:h-screen h-full">
+        <!-- NAVBAR-SECTION -->
+        <header
+          class="flex sticky w-full top-0 justify-between items-center md:px-10 px-4 mx-auto py-5"
+        >
+          <h3 class="font-black text-4xl">Amitesh</h3>
+          <nav class="hidden md:block">
+            <ul class="flex gap-4 text-2xl">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Tech</a></li>
+              <li><a href="#">Projects</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+          <nav class="md:hidden block">
+            <div>
+              <img
+                src="./assets/svg/menu-svgrepo-com.svg"
+                alt="menu"
+                class="w-10 h-10"
+              />
+            </div>
+            <div>
+              <img
+                src="./assets/svg/cross-svgrepo-com.svg"
+                alt="close"
+                class="hidden"
+              />
+            </div>
+          </nav>
+        </header>
+        <!-- HERO-TEXT-SECTION -->
+        <section
+          class="md:px-10 px-2 mx-auto md:mt-10 mt-3 md:py-0 py-10 text-center hero-section"
+        >
+          <div>
+            <p class="text-5xl py-2 px-4" id="Main-top">
+              Hi, I am <span class="text-primary">B.Amitesh</span>
+            </p>
+            <h1
+              id="main-heading"
+              class="xl:text-[8em] md:text-8xl md:block hidden text-4xl px-20 font-black hollow-text font-lost"
+            >
+              A Passionate <br />
+              Full Stack Developer
+            </h1>
+            <h1
+              id="main-heading"
+              class="text-5xl md:hidden block text-4xl px-2 font-black hollow-text font-lost"
+            >
+              A Passionate Full Stack Developer
+            </h1>
+          </div>
+          <p
+            class="md:text-xl text-sm text-justify mt-6 xl:px-36 px-4"
+            id="main-para"
+          >
+            A UI/UX developer with one year of experience in crafting engaging
+            and user-friendly digital experiences. My journey in the tech world
+            began with a focus on UI/UX design, where I honed my skills in
+            creating intuitive interfaces that delight users. Now, I'm on a
+            mission to transition into a full-stack developer role, leveraging
+            my expertise in JavaScript, React.js, Next.js, Node.js, and the MERN
+            stack to build robust and scalable web applications.
+          </p>
+          <div class="my-10 px-4 flex gap-4 justify-center">
+            <button
+              class="md:px-10 px-4 mail-hover border border-transparent hover:border-black hover:bg-transparent hover:text-black font-bold text-lg py-2 bg-primary rounded-full text-white duration-300"
+            >
+              Hire Me
+            </button>
+            <button
+              class="md:px-10 px-4 resume-hover border border-transparent hover:border-black hover:bg-transparent font-bold text-lg py-2 bg-tertiary rounded-full duration-300"
+            >
+              Resume
+            </button>
+          </div>
+          <div class="flex gap-4 px-6 items-center justify-center">
+            <img
+              src="./assets/svg/linkedin-linked-in-svgrepo-com.svg"
+              class="w-7 h-7 hover:scale-110 duration-300"
+              alt=""
+            />
+            <img
+              src="./assets/svg/github-142-svgrepo-com.svg"
+              class="w-7 h-7 hover:scale-110 duration-300"
+              alt=""
+            />
+            <img
+              src="./assets/svg/gmail-svgrepo-com.svg"
+              class="w-7 h-7 hover:scale-110 duration-300"
+              alt=""
+            />
+          </div>
+        </section>
+      </div>
+      <hr class="border border-black opacity-5 mx-10" />
+      <!-- TECH-SECTION -->
+      <div class="tech-section md:px-10 px-2" id="tech">
+        <h2 class="font-creamy text-5xl py-6 text-center">
+          Tech <span class="text-primary font-creamy">Skills</span> -
+        </h2>
+        <div class="flex justify-center">
+          <img src="./assets/images/skills.gif" alt="skills" />
+        </div>
+        <section
+          id="tech-skills"
+          class="flex justify-center flex-col md:px-10 px-0 gap-8 py-6 overflow-hidden relative mx-auto"
+        >
+          <div class="flex gap-8 justify-center" id="swippe-left">
+            <div
+              class="border border-zinc-900 border-opacity-5 shadow-lg shadow-[#E1AFD1] rounded-xl px-6 py-4 flex gap-3 items-center"
+            >
+              <img
+                src="./assets/svg/html-5-svgrepo-com.svg"
+                class="w-7 h-7"
+                alt="html"
+              />
+              <h2>Html</h2>
+            </div>
+            <div
+              class="border border-zinc-900 border-opacity-5 shadow-lg shadow-[#E1AFD1] rounded-xl px-6 py-4 flex gap-3 items-center"
+            >
+              <img
+                src="./assets/svg/css-3-svgrepo-com.svg"
+                class="w-7 h-7"
+                alt="js"
+              />
+              <h2>CSS</h2>
+            </div>
+            <div
+              class="border border-zinc-900 border-opacity-5 shadow-lg shadow-[#E1AFD1] rounded-xl px-6 py-4 flex gap-3 items-center"
+            >
+              <img
+                src="./assets/svg/scss-svgrepo-com.svg"
+                class="w-7 h-7"
+                alt="sass"
+              />
+              <h2>Sass</h2>
+            </div>
+            <div
+              class="border border-zinc-900 border-opacity-5 shadow-lg shadow-[#E1AFD1] rounded-xl px-6 py-4 flex gap-3 items-center"
+            >
+              <img
+                src="./assets/svg/javascript-svgrepo-com.svg"
+                class="w-7 h-7"
+                alt="js"
+              />
+              <h2>Javascript</h2>
+            </div>
+            <div
+              class="border border-zinc-900 border-opacity-5 shadow-lg shadow-[#E1AFD1] rounded-xl px-6 py-4 flex gap-3 items-center"
+            >
+              <img
+                src="./assets/svg/react-svgrepo-com.svg"
+                class="w-7 h-7"
+                alt="react"
+              />
+              <h2>React Js</h2>
+            </div>
+            <div
+              class="border border-zinc-900 border-opacity-5 shadow-lg shadow-[#E1AFD1] rounded-xl px-6 py-4 flex gap-3 items-center"
+            >
+              <img
+                src="./assets/svg/typescript-svgrepo-com.svg"
+                class="w-7 h-7"
+                alt="js"
+              />
+              <h2>Typescript</h2>
+            </div>
+            <div
+              class="border border-zinc-900 border-opacity-5 shadow-lg shadow-[#E1AFD1] rounded-xl px-6 py-4 flex gap-3 items-center"
+            >
+              <img
+                src="./assets/svg/redux-svgrepo-com.svg"
+                class="w-7 h-7"
+                alt="redux"
+              />
+              <h2>Redux</h2>
+            </div>
+            <div
+              class="border border-zinc-900 border-opacity-5 shadow-lg shadow-[#E1AFD1] rounded-xl px-6 py-4 flex gap-3 items-center"
+            >
+              <img
+                src="./assets/svg/next-js-svgrepo-com.svg"
+                class="w-7 h-7"
+                alt="next-js"
+              />
+              <h2>Next Js</h2>
+            </div>
+          </div>
+          <div class="flex gap-8 justify-center" id="swippe-right">
+            <div
+              class="border border-zinc-900 border-opacity-5 shadow-lg shadow-[#E1AFD1] rounded-xl px-6 py-4 flex gap-3 items-center"
+            >
+              <img
+                src="./assets/svg/django-svgrepo-com.svg"
+                class="w-7 h-7"
+                alt="django"
+              />
+              <h2>Django</h2>
+            </div>
+            <div
+              class="border border-zinc-900 border-opacity-5 shadow-lg shadow-[#E1AFD1] rounded-xl px-6 py-4 flex gap-3 items-center"
+            >
+              <img
+                src="./assets/svg/angular-icon-svgrepo-com.svg"
+                class="w-7 h-7"
+                alt="Angular"
+              />
+              <h2>Angular</h2>
+            </div>
+            <div
+              class="border border-zinc-900 border-opacity-5 shadow-lg shadow-[#E1AFD1] rounded-xl px-6 py-4 flex gap-3 items-center"
+            >
+              <img
+                src="./assets/svg/node-js-svgrepo-com.svg"
+                class="w-7 h-7"
+                alt="node-js"
+              />
+              <h2>Node Js</h2>
+            </div>
+            <div
+              class="border border-zinc-900 border-opacity-5 shadow-lg shadow-[#E1AFD1] rounded-xl px-6 py-4 flex gap-3 items-center"
+            >
+              <img
+                src="./assets/svg/express-svgrepo-com.svg"
+                class="w-7 h-7"
+                alt="express-js"
+              />
+              <h2>Express Js</h2>
+            </div>
+            <div
+              class="border border-zinc-900 border-opacity-5 shadow-lg shadow-[#E1AFD1] rounded-xl px-6 py-4 flex gap-3 items-center"
+            >
+              <img
+                src="./assets/svg/mongodb-svgrepo-com.svg"
+                class="w-7 h-7"
+                alt="js"
+              />
+              <h2>Mongo DB</h2>
+            </div>
+            <div
+              class="border border-zinc-900 border-opacity-5 shadow-lg shadow-[#E1AFD1] rounded-xl px-6 py-4 flex gap-3 items-center"
+            >
+              <img
+                src="./assets/svg/mysql-svgrepo-com.svg"
+                class="w-7 h-7"
+                alt="Mysql"
+              />
+              <h2>Mysql</h2>
+            </div>
+            <div
+              class="border border-zinc-900 border-opacity-5 shadow-lg shadow-[#E1AFD1] rounded-xl px-6 py-4 flex gap-3 items-center"
+            >
+              <img
+                src="./assets/svg/tailwind-svgrepo-com.svg"
+                class="w-7 h-7"
+                alt="js"
+              />
+              <h2>Tailwind CSS</h2>
+            </div>
+          </div>
+          <div class="flex gap-8 justify-center" id="swippe-left-last">
+            <div
+              class="border border-zinc-900 border-opacity-5 shadow-lg shadow-[#E1AFD1] rounded-xl px-6 py-4 flex gap-3 items-center"
+            >
+              <img
+                src="./assets/svg/bootstrap-4-logo-svgrepo-com.svg"
+                class="w-7 h-7"
+                alt="js"
+              />
+              <h2>Bootstrap CSS</h2>
+            </div>
+            <div
+              class="border border-zinc-900 border-opacity-5 shadow-lg shadow-[#E1AFD1] rounded-xl px-6 py-4 flex gap-3 items-center"
+            >
+              <img
+                src="./assets/svg/python-svgrepo-com.svg"
+                class="w-7 h-7"
+                alt="js"
+              />
+              <h2>Python</h2>
+            </div>
+            <div
+              class="border border-zinc-900 border-opacity-5 shadow-lg shadow-[#E1AFD1] rounded-xl px-6 py-4 flex gap-3 items-center"
+            >
+              <img
+                src="./assets/svg/php-svgrepo-com.svg"
+                class="w-7 h-7"
+                alt="js"
+              />
+              <h2>Php</h2>
+            </div>
+            <div
+              class="border border-zinc-900 border-opacity-5 shadow-lg shadow-[#E1AFD1] rounded-xl px-6 py-4 flex gap-3 items-center"
+            >
+              <img
+                src="./assets/svg/github-142-svgrepo-com.svg"
+                class="w-7 h-7"
+                alt="js"
+              />
+              <h2>GitHub</h2>
+            </div>
+            <div
+              class="border border-zinc-900 border-opacity-5 shadow-lg shadow-[#E1AFD1] rounded-xl px-6 py-4 flex gap-3 items-center"
+            >
+              <img
+                src="./assets/svg/git-svgrepo-com.svg"
+                class="w-7 h-7"
+                alt="js"
+              />
+              <h2>Git</h2>
+            </div>
+            <div
+              class="border border-zinc-900 border-opacity-5 shadow-lg shadow-[#E1AFD1] rounded-xl px-6 py-4 flex gap-3 items-center"
+            >
+              <img
+                src="./assets/svg/docker-svgrepo-com.svg"
+                class="w-7 h-7"
+                alt="docker"
+              />
+              <h2>Docker</h2>
+            </div>
+          </div>
+        </section>
+      </div>
+      <hr class="border border-black opacity-5 mx-10" />
+      <!-- PROJECT-SECTION -->
+      <div class="project-section px-10 py-6">
+        <h2 class="font-creamy text-5xl py-6 text-center">
+          Personal <span class="text-primary font-creamy">Projects</span> -
+        </h2>
+        <div class="flex justify-center">
+          <img
+            src="./assets/images/projects.png"
+            class="w-48 h-48 my-10"
+            alt="Projects"
+          />
+        </div>
+        <div class="container-prj">
+          <div data-text="E-Store" style="--r: -15" class="glass">
+            <img
+              src="https://i.pinimg.com/originals/8b/73/38/8b7338d002a1c50ebc91c6d97ef97cc7.png"
+              alt=""
+              class="rounded-xl"
+            />
+          </div>
+          <a
+            href="https://loop-sepia.vercel.app"
+            target="_blank"
+            data-text="Loop"
+            style="--r: 5"
+            class="glass"
+          >
+            <img
+              src="https://cdn.dribbble.com/users/4559851/screenshots/11333039/music_desktop_ui_-_dribbble_4x.png"
+              alt=""
+              class="rounded-xl"
+            />
+          </a>
+          <div data-text="Sinema" style="--r: 25" class="glass">
+            <img
+              src="https://cdn.dribbble.com/users/2119910/screenshots/14543486/dribble_post_final_filmat_4x.png"
+              alt=""
+              class="rounded-xl"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- ABOUT-SECTION -->
+      <div class="about-section">
+        <h2 class="font-creamy text-5xl py-6 text-center">
+          About <span class="text-primary font-creamy">me</span> -
+        </h2>
+        <div class="flex justify-center">
+          <img
+            src="./assets/images/profile-pic.png"
+            class="w-48 h-48 rounded-full"
+            alt="amitesh"
+          />
+        </div>
+        <section class="">
+          <div class="container mx-auto md:px-6 px-2 py-10">
+            <div class="text-center">
+              <h2 class="text-4xl font-semibold text-gray-800">B. Amitesh</h2>
+              <p class="text-gray-600 mt-4">
+                UI/UX Developer and Aspiring Full Stack Developer
+              </p>
+            </div>
+            <div class="flex justify-center mt-6">
+              <div
+                class="w-full rounded-lg shadow md:px-5 px-4 py-4 text-gray-800 text-gray-200"
+              >
+                <p class="text-md mt-4">
+                  Hi there! I'm <span class="font-semibold">B. Amitesh</span>, a
+                  passionate UI/UX Developer currently working at
+                  <span class="font-semibold">Globussoft</span> in Bhilai. I
+                  have a strong aspiration to become a Full Stack Developer and
+                  am deeply interested in the world of IoT (Internet of Things).
+                </p>
+                <p class="text-md mt-4">
+                  With a mastery in
+                  <span class="font-semibold">JavaScript, CSS, React.js</span>,
+                  and <span class="font-semibold">Python</span>, I bring a
+                  versatile skill set to the table. My current focus is on
+                  developing a startup website that reflects modern design
+                  principles and user-friendly interfaces.
+                </p>
+                <p class="text-md mt-4">
+                  I'm always open to collaboration, especially when it comes to
+                  open-source contributions. If you're looking for a partner in
+                  frontend development or have a project that could use a
+                  creative touch, let's connect!
+                </p>
+                <p class="text-md mt-4">
+                  As I continue to expand my knowledge in the MERN stack and
+                  Data Structures & Algorithms, I remain committed to learning
+                  and growing in this ever-evolving field.
+                </p>
+                <p class="text-md mt-4">
+                  Ask me about anything frontend-related – I'm here to share my
+                  knowledge and learn from others. And just for fun, let's talk
+                  about why
+                  <span class="font-semibold">JavaScript is amazing</span>!
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- CONTACT-SECTION -->
+      <div class="contact-section py-10">
+        <h2 class="font-creamy text-5xl py-6 text-center">
+          Contact <span class="text-primary font-creamy">Me</span> -
+        </h2>
+        <div class="flex justify-between md:px-20 px-4 md:flex-row flex-col">
+          <div>
+            <img src="./assets/images/contact.png" alt="skills" />
+          </div>
+          <div class="md:w-[60%] w-full relative">
+            <div class="absolute inset-0 flex justify-center">
+              <img
+                src="./assets/images/mail.gif"
+                class="w-[50%] h-fit"
+                alt=""
+              />
+            </div>
+            <form
+              action=""
+              method="post"
+              class="bg-purple-400/20 border backdrop-blur-[2px] p-10 rounded-lg"
+            >
+              <div class="flex flex-col gap-2">
+                <label for="title">Title</label>
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  class="px-4 py-2 rounded-lg bg-transparent border border-white"
+                />
+              </div>
+              <div class="flex flex-col gap-2">
+                <label for="message">Message</label>
+                <textarea
+                  type="text"
+                  class="px-4 py-2 rounded-lg bg-transparent border border-white"
+                  rows="6"
+                  name=""
+                  id=""
+                ></textarea>
+              </div>
+              <button
+                class="bg-primary text-white rounded-full px-14 py-2 mt-4"
+                type="submit"
+                name=""
+                id=""
+              >
+                Send
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- FOOTER-SECTION -->
+      <div class="footer-section">
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+          <div class="footer__container bd-container">
+            <h2 class="footer__title">Amitesh</h2>
+            <p class="footer__description">
+              I am B.Amitesh and this is my personal website, consult me here.
+            </p>
+
+            <div class="footer__social flex justify-center items-center">
+              <a title="linkedin" href="#" class="footer__link">
+                <img
+                  src="./assets/svg/linkedin-linked-in-svgrepo-com.svg"
+                  class="w-11 h-11"
+                  alt=""
+                />
+              </a>
+              <a
+                title="github"
+                href="#"
+                class="footer__link bg-white rounded-full p-1"
+                ><img
+                  src="./assets/svg/github-142-svgrepo-com.svg"
+                  class="w-11 h-11 fill-white text-white"
+                  alt=""
+              /></a>
+              <a
+                title="twitter"
+                href="#"
+                class="footer__link bg-white rounded-full p-0.5"
+              >
+                <img src="./assets/svg/icons8-twitterx.svg" alt=""
+              /></a>
+            </div>
+            <p class="footer__copy">&#169; 2024 Amitesh. All right reserved</p>
+          </div>
+        </footer>
+      </div>
+    </main>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="
+        https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js
+        "></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
