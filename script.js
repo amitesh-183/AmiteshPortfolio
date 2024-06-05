@@ -1,10 +1,10 @@
 "use strict";
 
-const scroll = new LocomotiveScroll({
-  el: document.querySelector("#main"),
-  smooth: true,
-  lerp: 0.09,
-});
+// const scroll = new LocomotiveScroll({
+//   el: document.querySelector("#main"),
+//   smooth: true,
+//   lerp: 0.09,
+// });
 
 gsap.from("#Main-top", {
   x: -100,
@@ -24,23 +24,43 @@ gsap.from("#main-para", {
   duration: 1,
 });
 
-const sl = document.querySelector("#swippe-lef");
+// open Menu
 
-gsap.from(sl, {
-  x: sl.clientWidth - innerWidth * -1,
-  repeat: -1,
-  duration: 1,
-  yoyo: true,
-});
-gsap.from("#swippe-right", {
-  x: 0,
-  repeat: -1,
-  duration: 5,
-  yoyo: true,
-});
-gsap.to("#swippe-left", {
-  x: -200,
-  repeat: -1,
-  duration: 5,
-  yoyo: true,
+function openMenu() {
+  document.querySelector(".menu").classList.add("hidden");
+  document.querySelector(".close").classList.remove("hidden");
+  document
+    .querySelector("#mobile-nav")
+    .classList.remove("translate-x-[-22rem]");
+  document
+    .querySelector("#mobile-nav")
+    .classList.add("translate-x-[0rem] duration-500");
+}
+function closeMenu() {
+  document.querySelector(".menu").classList.remove("hidden");
+  document.querySelector(".close").classList.add("hidden");
+  document.querySelector("#mobile-nav").classList.add("translate-x-[-22rem]");
+  document.querySelector("#mobile-nav").classList.remove("translate-x-[0rem]");
+}
+
+document.addEventListener("scroll", () => {
+  const scrollPos =
+    window.scrollY ||
+    window.scrollTop ||
+    document.getElementsByTagName("html").scrollTop;
+  const sideNav = document.querySelector(".side-nav");
+  const back = document.querySelector(".back-to-top");
+  if (scrollPos > 10) {
+    sideNav.classList.remove("hidden");
+    sideNav.classList.add("block");
+    back.classList.remove("hidden");
+    back.classList.add("block");
+  } else {
+    sideNav.classList.remove("block");
+    sideNav.classList.add("hidden");
+    back.classList.remove("block");
+    back.classList.add("hidden");
+  }
+
+  console.log(scrollPos);
 });
