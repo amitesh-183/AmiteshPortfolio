@@ -59,13 +59,13 @@ body {
   font-family: "Lost";
 }
 
-.hero-section,
+/* .hero-section,
 .tech-section,
 .project-section,
 .about-section {
   height: 100vh;
   width: 100%;
-}
+} */
 
 .text-primary {
   color: var(--primary-color);
@@ -167,11 +167,15 @@ nav ul li:hover a {
   backdrop-filter: blur(10px);
   transform: rotate(calc(var(--r) * 1deg));
 }
+.container-prj:hover .glass {
+  margin: 0 20px;
+}
 
 @media screen and (max-width: 480px) {
   .container-prj .glass {
-    width: 320px;
-    height: 280px;
+    width: auto;
+    height: auto;
+    margin: 0;
   }
   .container-prj {
     flex-direction: column;
@@ -193,7 +197,7 @@ nav ul li:hover a {
 
 .container-prj:hover .glass {
   transform: rotate(0deg);
-  margin: 0 10px;
+  /* margin: 0 10px; */
 }
 
 .container-prj .glass::before {
@@ -550,5 +554,23 @@ nav ul li:hover a {
 @keyframes scrolli {
   to {
     left: -160px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .item,
+  .item-2nd,
+  .item3rd {
+    width: 70px;
+  }
+  #swippe-left-last h2 {
+    display: none;
+  }
+  #swippe-left h2 {
+    display: none;
+  }
+
+  #swippe-right h2 {
+    display: none;
   }
 }

@@ -24,11 +24,50 @@
   <body>
     <main id="main" class="relative">
       <header
-        class="md:flex hidden z-20 justify-between items-center md:px-10 px-4 mx-auto py-5"
+        class="md:hidden flex sticky bg-white w-full border z-20 rounded-xl top-0 left-0 right-0 justify-between items-center md:px-10 px-4 py-2"
       >
         <h3 class="font-black text-4xl">Amitesh</h3>
+        <nav
+          id="mobile-nav"
+          class="absolute top-16 h-[80vh] translate-x-[-36rem] bg-[#E1AFD1]/90 backdrop-blur border rounded-3xl z-20 w-[80%] py-10 left-0 px-10"
+        >
+          <ul class="flex flex-col gap-4">
+            <li class="text-7xl font-black"><a href="#home">Home</a></li>
+            <li class="text-7xl font-black">
+              <a href="#tech-skills">Tech</a>
+            </li>
+            <li class="text-7xl font-black">
+              <a href="#projects">Projects</a>
+            </li>
+            <li class="text-7xl font-black"><a href="#about">About</a></li>
+            <li class="text-7xl font-black">
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="block">
+          <div class="menu" onclick="openMenu()">
+            <img
+              src="./assets/svg/menu-svgrepo-com.svg"
+              alt="menu"
+              class="w-8 h-8"
+            />
+          </div>
+          <div class="close hidden" onclick="closeMenu()">
+            <img
+              src="./assets/svg/cross-svgrepo-com.svg"
+              class="w-8 h-8"
+              alt="close"
+            />
+          </div>
+        </nav>
+      </header>
+      <header
+        class="md:flex hidden z-20 justify-between max-w-6xl mx-auto items-center md:px-10 px-4 mx-auto py-5"
+      >
+        <h3 class="font-black text-3xl">Amitesh</h3>
         <nav>
-          <ul class="flex gap-4 text-2xl">
+          <ul class="flex gap-4 text-xl">
             <li>
               <a href="#home">Home</a>
             </li>
@@ -47,10 +86,11 @@
           </ul>
         </nav>
       </header>
+      <!-- Mobile navigate -->
       <nav
-        class="fixed top-[30%] right-0 z-20 bg-white/20 backdrop-blur-[2px] rounded-full py-4 side-nav hidden"
+        class="fixed bottom-0 sm:top-[30%] h-fit sm:w-fit w-full sm:right-0 z-20 bg-white/20 backdrop-blur-[2px] rounded-full py-4 side-nav hidden"
       >
-        <ul class="flex flex-col gap-4 items-center text-2xl">
+        <ul class="flex sm:flex-col gap-4 items-center text-2xl">
           <li>
             <a href="#home"><i class="fa-solid fa-house"></i></a>
           </li>
@@ -68,126 +108,102 @@
           </li>
         </ul>
       </nav>
+      <!-- Back to top -->
       <div
-        class="back-to-top hidden fixed bottom-10 z-20 right-4 bg-primary h-10 w-10 flex justify-center items-center rounded-full text-white"
+        class="back-to-top hidden fixed sm:bottom-10 bottom-20 z-20 right-4 bg-primary h-10 w-10 flex justify-center items-center rounded-full text-white"
       >
         <a href="#main">
           <i class="fa-solid fa-arrow-up-long"></i>
         </a>
       </div>
       <!-- HERO-SECTION -->
-      <div id="home" class="md:h-screen h-full">
+      <div id="home" class="xl:h-[90vh] h-full">
         <!-- NAVBAR-SECTION -->
 
-        <header
-          class="md:hidden flex fixed bg-white/20 backdrop-blur-[2px] w-full border z-20 rounded-xl top-0 left-0 justify-between items-center md:px-10 px-4 mx-auto py-2"
-        >
-          <h3 class="font-black text-4xl">Amitesh</h3>
-          <nav
-            id="mobile-nav"
-            class="absolute top-16 h-[80vh] translate-x-[-22rem] bg-[#E1AFD1]/90 backdrop-blur border rounded-3xl z-20 w-[80%] py-10 left-0 px-10"
-          >
-            <ul class="flex flex-col gap-4">
-              <li class="text-7xl font-black"><a href="#home">Home</a></li>
-              <li class="text-7xl font-black">
-                <a href="#tech-skills">Tech</a>
-              </li>
-              <li class="text-7xl font-black">
-                <a href="#projects">Projects</a>
-              </li>
-              <li class="text-7xl font-black"><a href="#about">About</a></li>
-              <li class="text-7xl font-black">
-                <a href="#contact">Contact</a>
-              </li>
-            </ul>
-          </nav>
-          <nav class="block">
-            <div class="menu" onclick="openMenu()">
-              <img
-                src="./assets/svg/menu-svgrepo-com.svg"
-                alt="menu"
-                class="w-8 h-8"
-              />
-            </div>
-            <div class="close hidden" onclick="closeMenu()">
-              <img
-                src="./assets/svg/cross-svgrepo-com.svg"
-                class="w-8 h-8"
-                alt="close"
-              />
-            </div>
-          </nav>
-        </header>
         <!-- HERO-TEXT-SECTION -->
         <section
-          class="md:px-10 px-2 mx-auto md:mt-10 pt-36 md:py-0 py-10 md:text-center hero-section"
+          class="px-2 mx-auto 2xl:max-w-fit max-w-6xl flex items-center flex-col justify-center md:py-0 h-[80vh] hero-section"
         >
           <div>
-            <p class="md:text-5xl text-3xl py-2 px-4" id="Main-top">
-              Hi, I am <span class="text-primary">B.Amitesh</span>
+            <p class="md:text-4xl text-3xl py-2 px-3" id="Main-top">
+              Hi, I am B.Amitesh
             </p>
             <h1
               id="main-heading"
-              class="xl:text-[8em] md:text-8xl md:block hidden text-4xl px-20 font-black hollow-text font-lost"
+              class="2xl:text-[5rem] xl:text-[5em] md:text-6xl sm:text-3xl md:block hidden text-4xl font-black hollow-text font-lost"
             >
-              A Passionate <br />
-              Full Stack Developer
+              A Passionate Developer
             </h1>
             <h1
               id="main-heading"
               class="text-5xl md:hidden block text-6xl px-2 font-black"
             >
-              A Passionate Full Stack Developer
+              A Passionate Developer
             </h1>
           </div>
-          <p
-            class="md:text-xl text-sm text-justify mt-6 xl:px-36 px-4"
-            id="main-para"
-          >
-            A UI/UX developer with one year of experience in crafting engaging
-            and user-friendly digital experiences. My journey in the tech world
-            began with a focus on UI/UX design, where I honed my skills in
-            creating intuitive interfaces that delight users. Now, I'm on a
-            mission to transition into a full-stack developer role, leveraging
-            my expertise in JavaScript, React.js, Next.js, Node.js, and the MERN
-            stack to build robust and scalable web applications.
+          <p class="md:text-xl text-sm text-center px-4 py-6" id="main-para">
+            A UI/UX developer with one year of experience, skilled in
+            JavaScript, React.js, Next.js, Node.js, and the MERN stack, <br />
+            now aspiring to become a full-stack/Frontend developer.
           </p>
           <div class="my-10 px-4 flex gap-4 justify-center">
-            <button
+            <a
+              target="_blank"
+              href="https://wa.link/7iojwp"
               class="md:px-10 px-4 mail-hover border border-transparent hover:border-black hover:bg-transparent hover:text-black font-bold text-lg py-2 bg-primary rounded-full text-white duration-300"
             >
               Hire Me
-            </button>
-            <button
+            </a>
+            <a
+              download
+              href="/assets/B_Amitesh.pdf"
               class="md:px-10 px-4 resume-hover border border-transparent hover:border-black hover:bg-transparent font-bold text-lg py-2 bg-tertiary rounded-full duration-300"
             >
               Resume
-            </button>
+            </a>
           </div>
           <div class="flex gap-4 px-6 items-center justify-center">
-            <img
-              src="./assets/svg/linkedin-linked-in-svgrepo-com.svg"
-              class="w-7 h-7 hover:scale-110 duration-300"
-              alt=""
-            />
-            <img
-              src="./assets/svg/github-142-svgrepo-com.svg"
-              class="w-7 h-7 hover:scale-110 duration-300"
-              alt=""
-            />
-            <img
-              src="./assets/svg/gmail-svgrepo-com.svg"
-              class="w-7 h-7 hover:scale-110 duration-300"
-              alt=""
-            />
+            <a
+              href="https://www.linkedin.com/in/bamitesh183"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="./assets/svg/linkedin-linked-in-svgrepo-com.svg"
+                class="w-7 h-7 hover:scale-110 duration-300"
+                alt=""
+              />
+            </a>
+            <a
+              href="https://www.github.com/amitesh-183"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="./assets/svg/github-142-svgrepo-com.svg"
+                class="w-7 h-7 hover:scale-110 duration-300"
+                alt=""
+              />
+            </a>
+            <a href="mailto:bamitesh520@gmail.com">
+              <img
+                src="./assets/svg/gmail-svgrepo-com.svg"
+                class="w-7 h-7 hover:scale-110 duration-300"
+                alt=""
+              />
+            </a>
           </div>
         </section>
       </div>
       <hr class="border border-black opacity-5 mx-10" />
       <!-- TECH-SECTION -->
-      <section id="tech-skills" class="tech-section md:px-10 px-2" id="tech">
-        <h2 class="font-creamy text-5xl py-6 text-center">
-          Tech <span class="text-primary font-creamy">Skills</span> -
+      <section
+        id="tech-skills"
+        class="tech-section md:px-10 px-2 py-10"
+        id="tech"
+      >
+        <h2 class="font-creamy text-5xl py-3 text-center">
+          Tech <span class="text-primary font-creamy">Skills</span>
         </h2>
         <div class="flex justify-center">
           <img src="./assets/images/skills.gif" alt="skills" />
@@ -416,9 +432,9 @@
       </section>
       <hr class="border border-black opacity-5 mx-10" />
       <!-- PROJECT-SECTION -->
-      <section id="projects" class="project-section px-10 py-6">
+      <section id="projects" class="project-section px-10 py-10">
         <h2 class="font-creamy text-5xl py-6 text-center">
-          Personal <span class="text-primary font-creamy">Projects</span> -
+          <span class="text-primary font-creamy">My Projects</span>
         </h2>
         <div class="flex justify-center">
           <img
@@ -428,13 +444,19 @@
           />
         </div>
         <div class="container-prj">
-          <div data-text="E-Store" style="--r: -15" class="glass">
+          <a
+            href="https://estore.pythonanywhere.com"
+            target="_blank"
+            data-text="E-Store"
+            style="--r: -15"
+            class="glass"
+          >
             <img
               src="https://i.pinimg.com/originals/8b/73/38/8b7338d002a1c50ebc91c6d97ef97cc7.png"
               alt=""
               class="rounded-xl"
             />
-          </div>
+          </a>
           <a
             href="https://loop-sepia.vercel.app"
             target="_blank"
@@ -448,24 +470,30 @@
               class="rounded-xl"
             />
           </a>
-          <a href="https://sineema.netlify.app/" target="_blank" data-text="Sinema" style="--r: 25" class="glass">
+          <a
+            href="https://sineema.netlify.app/"
+            target="_blank"
+            data-text="Sinema"
+            style="--r: 25"
+            class="glass"
+          >
             <img
               src="https://cdn.dribbble.com/users/2119910/screenshots/14543486/dribble_post_final_filmat_4x.png"
               alt=""
               class="rounded-xl"
             />
-          </div>
+          </a>
         </div>
       </section>
       <!-- ABOUT-SECTION -->
-      <section id="about" class="about-section">
+      <section id="about" class="about-section py-10">
         <h2 class="font-creamy text-5xl py-6 text-center">
           About <span class="text-primary font-creamy">me</span> -
         </h2>
         <div class="flex justify-center">
           <img
             src="./assets/images/profile-pic.png"
-            class="w-48 h-48 rounded-full"
+            class="md:w-48 md:h-48 h-32 w-32 rounded-full"
             alt="amitesh"
           />
         </div>
@@ -521,17 +549,17 @@
       <!-- CONTACT-SECTION -->
       <section id="contact" class="contact-section py-10">
         <h2 class="font-creamy text-5xl py-6 text-center">
-          Contact <span class="text-primary font-creamy">Me</span> -
+          Contact <span class="text-primary font-creamy">Me</span>
         </h2>
         <div class="flex justify-between md:px-20 px-4 md:flex-row flex-col">
           <div>
-            <img src="./assets/images/contact.png" alt="skills" />
+            <img src="./assets/images/contact.webp" alt="skills" />
           </div>
-          <div class="md:w-[60%] w-full relative">
+          <div class="md:w-[60%] w-full relative overflow-hidden">
             <div class="absolute inset-0 flex justify-center">
               <img
                 src="./assets/images/mail.gif"
-                class="w-[50%] h-fit"
+                class="2xl:w-[30%] xl:w-[50%] h-fit"
                 alt=""
               />
             </div>

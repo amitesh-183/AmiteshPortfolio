@@ -31,7 +31,7 @@ function openMenu() {
   document.querySelector(".close").classList.remove("hidden");
   document
     .querySelector("#mobile-nav")
-    .classList.remove("translate-x-[-22rem]");
+    .classList.remove("translate-x-[-36rem]");
   document
     .querySelector("#mobile-nav")
     .classList.add("translate-x-[0rem] duration-500");
@@ -39,7 +39,7 @@ function openMenu() {
 function closeMenu() {
   document.querySelector(".menu").classList.remove("hidden");
   document.querySelector(".close").classList.add("hidden");
-  document.querySelector("#mobile-nav").classList.add("translate-x-[-22rem]");
+  document.querySelector("#mobile-nav").classList.add("translate-x-[-36rem]");
   document.querySelector("#mobile-nav").classList.remove("translate-x-[0rem]");
 }
 
