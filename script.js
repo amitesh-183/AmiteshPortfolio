@@ -64,3 +64,25 @@ document.addEventListener("scroll", () => {
 
   console.log(scrollPos);
 });
+
+(function () {
+  emailjs.init("ijCUMwA8uohC5CXHX");
+})();
+
+document
+  .getElementById("contact-form")
+  .addEventListener("submit", function (event) {
+    event.preventDefault(); // Prevent the default form submission
+
+    emailjs.sendForm("service_4rf88pg", "template_ovjg0d8", this).then(
+      function (response) {
+        console.log("SUCCESS!", response.status, response.text);
+        alert("Message sent successfully!");
+        document.getElementById("contact-form").reset();
+      },
+      function (error) {
+        console.log("FAILED...", error);
+        alert("Failed to send message. Please try again.");
+      }
+    );
+  });

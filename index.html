@@ -90,7 +90,7 @@
       <nav
         class="fixed bottom-0 sm:top-[30%] h-fit sm:w-fit w-full sm:right-0 z-20 bg-white/20 backdrop-blur-[2px] rounded-full py-4 side-nav hidden"
       >
-        <ul class="flex sm:flex-col gap-4 items-center text-2xl">
+        <ul class="flex sm:flex-col sm:gap-4 items-center text-2xl">
           <li>
             <a href="#home"><i class="fa-solid fa-house"></i></a>
           </li>
@@ -490,21 +490,21 @@
         <h2 class="font-creamy text-5xl py-6 text-center">
           About <span class="text-primary font-creamy">me</span> -
         </h2>
-        <div class="flex justify-center">
+        <!-- <div class="flex justify-center">
           <img
             src="./assets/images/profile-pic.png"
             class="md:w-48 md:h-48 h-32 w-32 rounded-full"
             alt="amitesh"
           />
-        </div>
+        </div> -->
         <section class="">
           <div class="container mx-auto md:px-6 px-2 py-10">
-            <div class="text-center">
+            <!-- <div class="text-center">
               <h2 class="text-4xl font-semibold text-gray-800">B. Amitesh</h2>
               <p class="text-gray-600 mt-4">
                 UI/UX Developer and Aspiring Full Stack Developer
               </p>
-            </div>
+            </div> -->
             <div class="flex justify-center mt-6">
               <div
                 class="w-full rounded-lg shadow md:px-5 px-4 py-4 text-gray-800 text-gray-200"
@@ -564,16 +564,15 @@
               />
             </div>
             <form
-              action=""
-              method="post"
+              id="contact-form"
               class="bg-purple-400/20 border backdrop-blur-[2px] p-10 rounded-lg"
             >
               <div class="flex flex-col gap-2">
                 <label for="title">Title</label>
                 <input
                   type="text"
-                  name=""
-                  id=""
+                  name="title"
+                  id="title"
                   class="px-4 py-2 rounded-lg bg-transparent border border-white"
                 />
               </div>
@@ -583,15 +582,13 @@
                   type="text"
                   class="px-4 py-2 rounded-lg bg-transparent border border-white"
                   rows="6"
-                  name=""
-                  id=""
+                  name="message"
+                  id="message"
                 ></textarea>
               </div>
               <button
                 class="bg-primary text-white rounded-full px-14 py-2 mt-4"
                 type="submit"
-                name=""
-                id=""
               >
                 Send
               </button>
@@ -602,7 +599,7 @@
       <!-- FOOTER-SECTION -->
       <footer class="footer-section">
         <!--===== FOOTER =====-->
-        <footer class="footer">
+        <footer class="footer sm:pb-0 pb-10">
           <div class="footer__container bd-container">
             <h2 class="footer__title">Amitesh</h2>
             <p class="footer__description">
@@ -610,7 +607,12 @@
             </p>
 
             <div class="footer__social flex justify-center items-center">
-              <a title="linkedin" href="#" class="footer__link">
+              <a
+                title="linkedin"
+                href="https://linkedin.com/in/bamitesh183"
+                target="_blank"
+                class="footer__link"
+              >
                 <img
                   src="./assets/svg/linkedin-linked-in-svgrepo-com.svg"
                   class="w-11 h-11"
@@ -619,19 +621,21 @@
               </a>
               <a
                 title="github"
-                href="#"
+                href="https://github.com/amitesh-183"
+                target="_blank"
                 class="footer__link bg-white rounded-full p-1"
                 ><img
                   src="./assets/svg/github-142-svgrepo-com.svg"
-                  class="w-11 h-11 fill-white text-white"
+                  class="w-11 h-11 text-white"
                   alt=""
               /></a>
               <a
                 title="twitter"
-                href="#"
-                class="footer__link bg-white rounded-full p-0.5"
+                href="https://twitter.com/amitesh_exe"
+                target="_blank"
+                class="footer__link rounded-full p-0.5"
               >
-                <img src="./assets/svg/icons8-twitterx.svg" alt=""
+                <img src="./assets/icons/x.png" class="w-14 h-14" alt=""
               /></a>
             </div>
             <p class="footer__copy">&#169; 2024 Amitesh. All right reserved</p>
@@ -652,6 +656,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <!-- <script src="
         https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js
         "></script> -->
